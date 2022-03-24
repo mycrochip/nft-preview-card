@@ -1,0 +1,169 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  --bg-main: 217 54% 11%;
+  --bg-card: 216 50% 16%;
+  --bg-line: 215 32% 27%;
+  --bg-shadow: 218 58% 10%;
+  --bg-soft-blue: 215 51% 70%;
+  --bg-cyan: 178 100% 50%;
+
+  --ff-main: 'Outfit', sans-serif;
+}
+
+body {
+  background-color: hsl( var(--bg-main) );
+  text-align: left;
+  height: 100vh;
+  font-family: var(--ff-main);
+  padding-block: 15vh 0;
+  margin: 0;
+}
+h1 {
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+p {
+  color: hsl( var(--bg-soft-blue) );
+  font-weight: 300;
+  line-height: 1.5;
+  margin: 5px 0;
+}
+
+span {
+  color: white;
+}
+
+hr {
+  height: 0;
+  border: none;
+  border-bottom: 0.5px solid hsl( var(--bg-line) );
+}
+
+h1:hover,
+span:hover {
+  color: hsl( var(--bg-cyan) );
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.highlight {
+  color: hsl( var(--bg-cyan) );
+}
+
+.main {
+  position: relative;
+}
+
+
+.card {
+  width: 288px;
+  margin-inline: auto;
+  margin-block: 0 20vh;
+  border-radius: 15px;
+  padding: 20px;
+  background-color: hsl( var(--bg-card) );
+  box-shadow: 0 20px 40px hsl( var(--bg-shadow) );
+}
+
+.container {
+  width: 100%;
+  border-radius: 10px;
+  position: relative;
+}
+
+.hero-img{
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  opacity: 1;
+  position: relative;
+  transition: 300ms ease;
+}
+
+.overlay {
+  display: block;
+  position: absolute;
+  opacity: 0; 
+
+  /*center the overlay*/
+  inset: 0;
+  margin: auto;
+}
+
+.container:hover {
+  background-color: hsl( var(--bg-cyan) );
+}
+.container:hover .hero-img {
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.description {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.indication {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bullet1,
+.bullet2,
+.bullet3 {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.bullet1 {
+  font-weight: 600;
+}
+
+.bullet1::before {
+  content: url("images/icon-ethereum.svg");
+  position: relative;
+  left: -5px; 
+  top: 3px;
+}
+
+.bullet2::before {
+  content: url("images/icon-clock.svg");
+  position: relative;
+  left: -5px; 
+  top: 3px;
+}
+
+.bullet3::before {
+  display: inline-block;
+  content: "";
+  background-image: url("images/image-avatar.png");
+  background-size: cover;
+  border: 0.5px solid white;
+  border-radius: 50%;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  left: -10px; 
+  top: 10px;
+}
+
+.creator {  
+  margin-left: 10px;
+}
+
+
+.attribution { font-size: 11px; text-align: center; color: white;}
+.attribution a { color: hsl( var(--bg-cyan) ); }
