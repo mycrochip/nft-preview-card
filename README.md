@@ -33,7 +33,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/nft-preview-card-SyCqGD9z5](https://www.frontendmentor.io/solutions/nft-preview-card-SyCqGD9z5)
 - Live Site URL: [https://mycrochip.github.io/nft-preview-card/](https://mycrochip.github.io/nft-preview-card/)
 
 
@@ -47,11 +47,9 @@ Users should be able to:
 
 ### What I learned
 
-I gained some understanding abput the use of flex-box. Though, in this project, I only used for spacing.
-I also practiced the used of varibles in css (They were not necessary, but I wanted to apply best practices)
+I gained some understanding about the use of flex-box. Though, in this project, I only used spacing. I also practiced the use of variables in CSS (They were not necessary, but I wanted to apply best practices)
 
-I was particularly proud of myself that I cracked the positioning of items 'absolutely' and got to center them through muscle memory
-(spent alot of time trying to figure that out)
+I was particularly proud of myself that I cracked the positioning of items 'absolutely' and got to center them through muscle memory (spent a lot of time trying to figure that out)
 
 ```html
 <div class="container">
